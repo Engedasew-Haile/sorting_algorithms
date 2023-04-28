@@ -73,7 +73,7 @@ void radix_sort(int *array, size_t size)
 
 	maximum = getMax(array, size);
 	output = malloc(size * sizeof(int));
-	if (output == '\0')
+	if (output == 0)
 		return;
 	/*
 	* Do counting sort for every digit. Note that instead
